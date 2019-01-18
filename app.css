@@ -1,0 +1,163 @@
+html, body {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 32px auto;
+  position: relative;
+}
+
+select {
+  padding: 4px 8px;
+  border: 1px solid #77a;
+  width: 200px;
+}
+
+.row {
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #444;
+  font-weight: bold;
+}
+
+input {
+  padding: 4px 8px;
+  border: 1px solid #77a;
+  width: 50px;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.upload {
+  background-color: blue;
+  border: 1px solid darkblue;
+  color: #fff;
+  font-size: 14px;
+}
+
+.close {
+  background-color: #a78;
+  border: 1px solid #a44;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 1;
+}
+
+th, td {
+  width: 32%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #acacac;
+}
+
+.control {
+  border: 1px solid #afafaf;
+  margin-bottom: 8px;
+  padding: 8px;
+  display: flex;
+}
+
+select, input {
+  margin-right: 16px;
+}
+
+.upload:hover {
+  opacity: 0.85;
+}
+
+.download {
+  border: 1px solid #8a8;
+  color: green;
+  margin-left: 8px;
+}
+
+.download:hover {
+  border-color: #4a4;
+  font-weight: heavy;
+}
+
+#info {
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+th:first-child, th:last-child,
+td:first-child, td:last-child {
+  width: 10%;
+  text-align: center;
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000;
+  z-index: -1;
+  transition: all .3s ease;
+}
+
+#form {
+  background-color: #fff;
+  padding: 16px;
+  max-width: 400px;
+  height: calc(100vh - 128px);
+  overflow: scroll;
+}
+
+#title {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #0003;
+}
+
+input { 
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+#userForm label {
+  font-size: 13px;
+  color: #777;
+}
+
+#userForm strong {
+  font-size: 14px;
+  color: #545454;
+  display: block;
+  margin: 4px 0 4px 0;
+}
+
+.section {
+  margin-left: 4px;
+}

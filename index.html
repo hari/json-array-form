@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parse</title>
+    <link rel="stylesheet" href="app.css" />
+ 	</head>
+  <body>
+	  <div class="container">
+		  <div class="row control">
+        <div style="flex: 1">
+          <span id="info">No file selected.</span>
+          <button class="btn upload" onclick="document.getElementById('file').click()">Select Text File</button>
+          <input type="file" style="display: none" id="file" />
+        </div>
+        <button class="btn upload" onclick="addNew()">Add new</button>
+        <button id="download" class="btn download">Download</button>
+      </div>
+			<table>
+			  <thead>
+					<tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+				</thead>
+				<tbody id="output">
+				</tbody>
+			</table>
+    </div>
+    <div id="modal" onclick="hideModal()">
+      <div data-uid="-1" id="form" class="container" >
+        <div id="title"></div>
+        <small style="padding: 4px 0 4px 0">* Changing the value will reflect immediately to the data source.</small>
+        <form id="userForm" onsubmit="return false;">
+
+        </form>
+        <div id="edit_controls" style="text-align: right">
+          <button class="btn close" onclick="removeUser()">Remove user</button>
+          <button class="btn upload" onclick="hideModal()">Close</button>
+        </div>
+        <div id="add_controls" style="text-align: right">
+          <button class="btn close" onclick="removeUser()">Cancel</button>
+          <button class="btn upload" onclick="hideModal()">Save</button>
+        </div>
+      </div>
+    </div>
+    <script src="init.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
